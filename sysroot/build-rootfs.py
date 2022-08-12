@@ -46,6 +46,12 @@ unifiedPackages = [
     'cbhm-devel',
     'coregl',
     'coregl-devel',
+    'dali2',
+    'dali2-devel',
+    'dali2-adaptor',
+    'dali2-adaptor-devel',
+    'dali2-toolkit',
+    'dali2-toolkit-devel',
     'ecore-con-devel',
     'ecore-core',
     'ecore-core-devel',
@@ -137,11 +143,11 @@ parser.add_argument(
 parser.add_argument(
     '-b', '--base-repo', metavar='URL', type=str,
     help='url to the base packages repository',
-    default='http://download.tizen.org/snapshots/tizen/5.5-base/latest/repos/standard/packages')
+    default='http://download.tizen.org/snapshots/tizen/6.5-base/latest/repos/standard/packages')
 parser.add_argument(
     '-u', '--unified-repo', metavar='URL', type=str,
     help='url to the unified packages repository',
-    default='http://download.tizen.org/snapshots/tizen/5.5-unified/latest/repos/standard/packages')
+    default='http://download.tizen.org/snapshots/tizen/6.5-unified/latest/repos/standard/packages')
 args = parser.parse_args()
 
 if not args.output:
